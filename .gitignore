@@ -1,0 +1,14 @@
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules
+
+# Dev/Build
+makeblock.sh
+build
+
+# Unconfigured Editors
+.vscode
+.idea

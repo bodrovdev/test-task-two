@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="date=no">
+	<meta name="format-detection" content="address=no">
+	<meta name="format-detection" content="email=no">
+	<meta name="theme-color" content="darkblue">
+
+	<link href="./css/style.min.css" rel="stylesheet">
+	<title>test-two</title>
+</head>
+<body>
+	<header class="page-header">
+		<div class="select">
+			<div class="select__container base-container">
+				<button class="select__type-button">стоимость обслуживания</button>
+				<button class="select__type-button">стоимость лифта</button>
+				<button class="select__type-button">стоимость монтажа / замены</button>
+			</div>
+		</div>
+	</header>
+	<main class="page-content">
+		<section class="form-section section-block">
+			<div class="form-section__container base-container">
+				<form class="form-section__form-main" action="#">
+
+					<div class="form-section__inputset">
+						<span class="form-section__label">Тип лифта</span>
+						<div class="form-section__inputs-block elev-type__block">
+							<button class="form-section__button elev-type__item elev-type__item--one" type="button">
+								<span class="form-section__button-inner">Пассажирский</span>
+							</button>
+							<button class="form-section__button elev-type__item elev-type__item--two" type="button">
+								<span class="form-section__button-inner">Грузовой</span>
+							</button>
+							<button class="form-section__button elev-type__item elev-type__item--three" type="button">
+								<span class="form-section__button-inner">Коттеджный</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="form-section__inputset">
+						<span class="form-section__label">Тип привода</span>
+						<div class="form-section__inputs-block engine-type__block">
+							<button class="form-section__button engine-type__item engine-type__item--one" type="button">
+								<span class="form-section__button-inner">Электрический</span>
+							</button>
+							<button class="form-section__button engine-type__item engine-type__item--two" type="button">
+								<span class="form-section__button-inner">Гидравлический</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="form-section__inputset">
+						<span class="form-section__label">Производитель</span>
+						<div class="form-section__inputs-block country-type__block">
+							<button class="form-section__button country-type__item country-type__item--one" type="button">
+								<span class="form-section__button-inner">Европа</span>
+							</button>
+							<button class="form-section__button country-type__item country-type__item--two" type="button">
+								<span class="form-section__button-inner">Китай</span>
+							</button>
+							<button class="form-section__button country-type__item country-type__item--three" type="button">
+								<span class="form-section__button-inner">Россия и страны СНГ</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="form-section__inputset">
+						<span class="form-section__label">Количество лифтов</span>
+						<div class="form-section__inputs-block amount-type__block">
+							<button class="form-section__button amount-type__minus-button" type="button">
+								<span class="form-section__button-inner">-</span>
+							</button>
+							<input class="form-section__amount-input" value="0" type="number">
+							<button class="form-section__button amount-type__plus-button" type="button">
+								<span class="form-section__button-inner">+</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="form-section__inputset">
+						<span class="form-section__label">Грузоподъемность</span>
+						<div class="form-section__inputs-block weight-type__block">
+						</div>
+					</div>
+
+					<div class="form-section__inputset">
+						<span class="form-section__label">Количество остановок</span>
+						<div class="form-section__inputs-block floors-type__block">
+						</div>
+					</div>
+
+					<div class="form-section__inputset">
+						<span class="form-section__label">Глубина приямка, м</span>
+						<div class="form-section__inputs-block pit-type__block">
+							<input class="form-section__pit-input" value="0" type="number">
+						</div>
+					</div>
+
+					<div class="form-section__inputset">
+						<span class="form-section__label">Высота подъема, м</span>
+						<div class="form-section__inputs-block height-type__block">
+							<input class="form-section__height-input" value="0" type="number">
+						</div>
+					</div>
+
+					<div class="form-section__inputset">
+						<span class="form-section__label">Высота верхнего этажа, м</span>
+						<div class="form-section__inputs-block highfloor-type__block">
+							<input class="form-section__highfloor-input" value="0" type="number">
+						</div>
+					</div>
+
+					<div class="form-section__inputset">
+						<span class="form-section__label">Класс огнестойкости дверей шахты</span>
+						<div class="form-section__inputs-block fireresist-type__block">
+							<button class="form-section__button fireresist-type__item fireresist-type__item--one" type="button">
+								<span class="form-section__button-inner">Е30</span>
+							</button>
+							<button class="form-section__button fireresist-type__item fireresist-type__item--two" type="button">
+								<span class="form-section__button-inner">ЕI30</span>
+							</button>
+							<button class="form-section__button fireresist-type__item fireresist-type__item--three" type="button">
+								<span class="form-section__button-inner">ЕI60</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="form-section__inputset">
+						<span class="form-section__label">Отделка кабины</span>
+						<div class="form-section__inputs-block cab-type__block">
+							<button class="form-section__button cab-type__item cab-type__item--one" type="button">
+								<span class="form-section__button-inner">Нержавеющая сталь</span>
+							</button>
+							<button class="form-section__button cab-type__item cab-type__item--two" type="button">
+								<span class="form-section__button-inner">Лакокрасочное покрытие RAL</span>
+							</button>
+							<button class="form-section__button cab-type__item cab-type__item--three" type="button">
+								<span class="form-section__button-inner">Дерево</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="form-section__inputset">
+						<span class="form-section__label">Покрытие пола</span>
+						<div class="form-section__inputs-block base-type__block">
+							<button class="form-section__button base-type__item base-type__item--one" type="button">
+								<span class="form-section__button-inner">Рифленный лист</span>
+							</button>
+							<button class="form-section__button base-type__item base-type__item--two" type="button">
+								<span class="form-section__button-inner">Плитка</span>
+							</button>
+							<button class="form-section__button base-type__item base-type__item--three" type="button">
+								<span class="form-section__button-inner">Мрамор</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="form-section__inputset">
+						<span class="form-section__label">Вид работ</span>
+						<div class="form-section__inputs-block work-type__block">
+							<button class="form-section__button work-type__item work-type__item--one" type="button">
+								<span class="form-section__button-inner">Замена</span>
+							</button>
+							<button class="form-section__button work-type__item work-type__item--two" type="button">
+								<span class="form-section__button-inner">Новое строение</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="form-section__buttonset">
+						<button class="form-section__addmore" type="button">
+							<span class="form-section__button-caption">Добавить лифты</span>
+						</button>
+						<button class="form-section__submit" type="submit">
+							<span class="form-section__button-caption">Заказать рассчёт</span>
+						</button>
+					</div>
+
+				</form>
+			</div>
+		</section>
+
+		<section class="feedback">
+			<h2 class="feedback__title">У вас есть к нам вопросы?</h2>
+			<p class="feedback__info">
+				Если у вас возникли вопросы, 
+				то мы готовы ответить на них. 
+				Оставьте свои контакные данные 
+				и наш менеджер перезвонить вам в ближайшее время
+			</p>
+			<form class="feedback__form" action="#">
+				<input class="feedback__form-name" placeholder="Ваше имя*" type="text">
+				<input class="feedback__form-phone" placeholder="Ваш телефон*" type="number">
+				<input class="feedback__form-email" placeholder="Email*" type="email">
+				<button class="feedback-form__submit" type="submit">
+					<span class="feedback-form__button-caption">Отправить</span>
+				</button>
+			</form>
+			<p class="feedback__personaldata">
+				Отправляя данную форму, вы принимаете условие пользовательского соглашения
+			</p>
+		</section>
+
+	</main>
+	<footer class="page-footer">
+		<div class="page-footer__container base-container">
+			<nav class="footer-nav">
+				<ul class="footer-nav__list">
+					<li class="footer-nav__item"><a class="footer-nav__link base-link" href="#">О компании</a></li>
+					<li class="footer-nav__item"><a class="footer-nav__link base-link" href="#">Услуги</a></li>
+					<li class="footer-nav__item"><a class="footer-nav__link base-link" href="#">Виды лифтов</a></li>
+					<li class="footer-nav__item"><a class="footer-nav__link base-link" href="#">Производители</a></li>
+					<li class="footer-nav__item"><a class="footer-nav__link base-link" href="#">Наши проекты</a></li>
+					<li class="footer-nav__item"><a class="footer-nav__link base-link" href="#">Отзывы</a></li>
+					<li class="footer-nav__item"><a class="footer-nav__link base-link" href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="footer-main">
+				<div class="footer-main__logo-block"></div>
+				<div class="footer-main__contacts-block">
+					<ul class="footer-main__contacts-list">
+						<li class="footer-main__contacts-item">
+							<a class="footer-main__contacts-link base-link" href="#">
+								<svg class="footer-main__contacts-icon" width="" height="">
+									<use href="img/icon/sprite.svg#map-icon"></use>
+								</svg>
+								<span class="footer-main__contacts-label">Москва, ул. Ленина, д. 7, стр. 1</span>
+							</a>
+						</li>
+						<li class="footer-main__contacts-item">
+							<a class="footer-main__contacts-link base-link" href="#">
+								<svg class="footer-main__contacts-icon" width="" height="">
+									<use href="img/icon/sprite.svg#phone-icon"></use>
+								</svg>
+								<span class="footer-main__contacts-label">8(000) 000-00-00</span>
+							</a>
+						</li>
+						<li class="footer-main__contacts-item">
+							<a class="footer-main__contacts-link base-link" href="#">
+								<svg class="footer-main__contacts-icon" width="" height="">
+									<use href="img/icon/sprite.svg#icon-icon"></use>
+								</svg>
+								<span class="footer-main__contacts-label">info@mail.ru</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<form class="footer-main-feedback-form" action=""></form>
+			</div>
+			<div class="footer-underline">
+				<a href="" class="footer-underline__policy base-link">Политика конфиденциальности</a>
+				<span class="footer-underline__rights">Все права защищены. © 2019</span>
+				<span class="footer-underline__copyright">Создание сайта:</span>
+			</div>
+		</div>
+	</footer>
+<script src="./js/script.min.js"></script>
+</body>
+</html>

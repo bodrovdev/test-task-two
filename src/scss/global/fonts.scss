@@ -1,0 +1,6 @@
+@use "../mixins";
+
+@include mixins.font-face(OpenSans, normal, 300);
+@include mixins.font-face(OpenSans, normal, 400);
+@include mixins.font-face(OpenSans, normal, 600);
+@include mixins.font-face(OpenSans, normal, 700);

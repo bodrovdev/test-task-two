@@ -68,10 +68,6 @@
 
     margin-bottom: 20px;
 
-    @include mixins.respond-to(mobileOnly) {
-      flex-direction: column;
-    }
-
     & .footer-main__form-input {
       height: 40px;
     }
@@ -79,10 +75,6 @@
 
   &__form-bottomline {
     display: flex;
-
-    @include mixins.respond-to(mobileOnly) {
-      flex-direction: column;
-    }
 
     & .footer-main__form-input {
       height: 50px;

@@ -1,5 +1,15 @@
 @use "../mixins";
 
 .page-content {
+  position: relative;
+
   flex-grow: 1;
+
+  &__design-img {
+    position: absolute;
+    top: 150px;
+    right: 200px;
+
+    z-index: 1;
+  }
 }

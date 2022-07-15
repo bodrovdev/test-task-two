@@ -1,13 +1,124 @@
 @use "../mixins";
 
 .feedback {
+  position: relative;
+
   width: 100%;
+  background-color: #F8F8F8;
+
+  margin-bottom: 160px;
 
   &__container {
+    padding: 80px 0 80px 0;
+  }
 
+  &__design-img {
+    position: absolute;
+    top: 0;
+    left: 250px;
+
+    z-index: 0;
   }
 
   &__inner {
+    width: fit-content;
+
     margin-left: auto;
+
+    z-index: 10;
+  }
+
+  &__title {
+    font-family: var(--font-family-default);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #000000;
+
+    margin: 0 0 25px 0;
+
+    z-index: 100;
+  }
+
+  &__info {
+    font-family: var(--font-family-default);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #333333;
+
+    margin: 0 0 30px 0;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form-topline {
+    display: flex;
+
+    margin-bottom: 25px;
+  }
+
+  &__form-bottomline {
+    display: flex;
+  }
+
+  &__form-input {
+    width: 285px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #BDBDBD;
+    border-radius: 9px;
+
+    padding: 13px 0 13px 25px;
+    margin-right: 20px;
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+
+  &__form-input--submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 285px;
+    height: 48px;
+    border: 2px solid #3440D9;
+    border-radius: 0;
+
+    font-family: var(--font-family-default);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #3440D9;
+
+    transition-duration: 0.1s;
+
+    padding: 0;
+
+    &:hover {
+      background-color: #9398D6;
+      color: #FFFFFF;
+
+      transition-property: background-color, color;
+      transition-duration: 0.1s;
+      transition-timing-function: ease-in-out;
+    }
+  }
+
+  &__form-personaldata {
+    font-family: var(--font-family-default);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+
+    color: #828282;
   }
 }

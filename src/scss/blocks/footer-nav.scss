@@ -9,6 +9,8 @@
     display: flex;
     justify-content: space-between;
 
+    color: #FFFFFF;
+
     @include mixins.respond-to(mobileOnly) {
       flex-direction: column;
     }
@@ -17,6 +19,10 @@
 
     padding: 0;
     margin: 15px 0 15px 0;
+  }
+
+  &__item {
+    color: #FFFFFF;
   }
 
   &__link {

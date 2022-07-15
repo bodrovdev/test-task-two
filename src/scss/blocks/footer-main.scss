@@ -115,8 +115,15 @@
   }
 
   &__form-input--submit {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
     background: transparent;
     border: 2px solid #FFFFFF;
+    border-radius: 0;
+
+    padding: 0;
   }
 
   &__form-personaldata {

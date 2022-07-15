@@ -3,6 +3,8 @@
 .form-section {
   margin: 80px 0 150px 0;
 
+  z-index: 10;
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -20,7 +22,6 @@
 
   &__label {
     display: flex;
-    align-items: flex-end;
 
     width: 300px;
     min-height: 50px;
@@ -36,11 +37,103 @@
     display: flex;
 
     margin-left: 20px;
+		width: 100%;
 
     & .form-section__button:last-child {
       margin-right: 0;
     }
   }
+
+	&__slider {
+		width: 100%;
+		height: 9px;
+		max-width: 418px;
+		box-shadow: none;
+		border: none;
+		background: #D3D7DE;
+		border-radius: 3px;
+
+		.noUi-connect {
+			background: #3440D9;
+		}
+
+		.noUi-handle {
+			right: 0;
+			width: 3px;
+			height: 22px;
+			box-shadow: none;
+			border: none;
+			background: #0113FF;
+			border-radius: 0;
+
+			&::before {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				background: transparent;
+				width: 44px;
+				height: 44px;
+				content: '';
+			}
+
+			&::after {
+				display: none;
+			}
+		}
+
+		.noUi-tooltip {
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 14px;
+			color: #FFFFFF;
+			padding-left: 7px;
+			padding-right: 7px;
+			border: none;
+			background: #0113FF;
+			font-family: var(--font-family-default);
+
+			&::before {
+				position: absolute;
+				top: 100%;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 0;
+				height: 0;
+				border-left: 3px solid transparent;
+				border-right: 3px solid transparent;
+				border-top: 3px solid #0113FF;
+				content: '';
+			}
+		}
+
+		.noUi-value {
+			padding-top: 2px;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 14px;
+			font-family: var(--font-family-default);
+			color: #8187A2;
+		}
+
+		.noUi-pips-horizontal {
+			padding: 3px 0;
+		}
+
+		.noUi-marker {
+			background: #ABB0C6;
+		}
+
+		.noUi-marker-large {
+			height: 10px;
+			width: 1px;
+		}
+
+		.noUi-marker-normal {
+			width: 1px;
+			height: 5px;
+		}
+	}
 
   &__button {
     height: 50px;
@@ -118,7 +211,7 @@
 
   &__submit {
     width: 383px;
-    height: 94px;    
+    height: 94px;
     border: 3px solid #3440D9;
     background: transparent;
 

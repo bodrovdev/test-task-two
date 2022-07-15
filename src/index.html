@@ -10,6 +10,7 @@
 	<meta name="format-detection" content="email=no">
 	<meta name="theme-color" content="darkblue">
 
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.6.0/nouislider.css" rel="stylesheet">
 	<link href="./css/style.min.css" rel="stylesheet">
 	<title>test-two</title>
 </head>
@@ -30,6 +31,7 @@
 		</div>
 	</header>
 	<main class="page-content">
+		<img class="page-content__design-img" src="img/image/design/elev-main.png" width="754" height="841" alt="">
 		<section class="form-section section-block">
 			<div class="form-section__container base-container">
 				<form class="form-section__form-main" action="#">
@@ -92,12 +94,14 @@
 					<div class="form-section__inputset">
 						<span class="form-section__label">Грузоподъемность</span>
 						<div class="form-section__inputs-block weight-type__block">
+							<div id="slider-weight" class="form-section__slider"></div>
 						</div>
 					</div>
 
 					<div class="form-section__inputset">
 						<span class="form-section__label">Количество остановок</span>
 						<div class="form-section__inputs-block floors-type__block">
+							<div id="slider-stages" class="form-section__slider"></div>
 						</div>
 					</div>
 
@@ -197,24 +201,27 @@
 				<div class="feedback__inner">
 					<h3 class="feedback__title">У вас есть к нам вопросы?</h3>
 					<p class="feedback__info">
-						Если у вас возникли вопросы, 
-						то мы готовы ответить на них. 
-						Оставьте свои контакные данные 
+						Если у вас возникли вопросы,
+						то мы готовы ответить на них.
+						Оставьте свои контактные данные<br>
 						и наш менеджер перезвонить вам в ближайшее время
 					</p>
 					<form class="feedback__form" action="#">
-						<input class="feedback__form-name" placeholder="Ваше имя*" type="text">
-						<input class="feedback__form-phone" placeholder="Ваш телефон*" type="number">
-						<input class="feedback__form-email" placeholder="Email*" type="email">
-						<button class="feedback-form__submit" type="submit">
-							<span class="feedback-form__button-caption">Отправить</span>
-						</button>
+						<div class="feedback__form-topline">
+							<input class="feedback__form-input" placeholder="Ваше имя*" type="text">
+							<input class="feedback__form-input" placeholder="Ваш телефон*" type="tel">
+						</div>
+						<div class="feedback__form-bottomline">
+							<input class="feedback__form-input" placeholder="Email*" type="email">
+							<input class="feedback__form-input feedback__form-input--submit" type="submit">
+						</div>
 					</form>
 					<p class="feedback__form-personaldata">
 						Отправляя данную форму, вы принимаете условие пользовательского соглашения
 					</p>
 				</div>
 			</div>
+			<img class="feedback__design-img" src="img/image/design/elev-bottom.png" width="776" height="622" alt="#">
 		</section>
 
 	</main>
@@ -267,7 +274,7 @@
 					<h3 class="footer-main__form-title">Обратная связь</h3>
 					<div class="footer-main__form-topline">
 						<input class="footer-main__form-input" value="Введите ваше имя" type="text">
-						<input class="footer-main__form-input" value="Телефон" type="text">
+						<input class="footer-main__form-input" value="Телефон" type="tel">
 					</div>
 					<div class="footer-main__form-bottomline">
 						<input class="footer-main__form-input" value="Ваш комментарий" type="text">
@@ -287,6 +294,7 @@
 			</div>
 		</div>
 	</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.6.0/nouislider.min.js"></script>
 <script src="./js/script.min.js"></script>
 </body>
 </html>

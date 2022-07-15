@@ -1,0 +1,87 @@
+@use "../mixins";
+
+.form-section {
+  margin-top: 80px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__inputset {
+    display: flex;
+
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__label {
+    display: flex;
+    align-items: flex-end;
+
+    width: 300px;
+    min-height: 50px;
+
+    font-family: var(--font-family-default);
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 120%;
+    color: #4F4F4F;
+  }
+
+  &__inputs-block {
+    display: flex;
+
+    margin-left: 20px;
+
+    & .form-section__button:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__button {
+    height: 50px;
+    border: none;
+    border-radius: 9px;
+    background-color: #D3D7DE;
+    cursor: pointer;
+
+    transition-duration: 0.1s;
+
+    padding: 15px;
+    margin-right: 15px;
+
+    &:hover {
+      background-color: #9398D6;
+
+      transition-property: background-color;
+      transition-duration: 0.1s;
+      transition-timing-function: ease-in-out;
+    }
+  }
+
+  &__button-inner {
+    font-family: var(--font-family-default);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    color: #11263A;
+
+    transition-duration: 0.1s;
+  }
+
+  &__button--active {
+    background-color: #3440D9;
+
+    transition-duration: 0.1s;
+  }
+
+  &__button--active .form-section__button-inner {
+    color: #FFFFFF;
+
+    transition-duration: 0.1s;
+  }
+}

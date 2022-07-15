@@ -1,0 +1,23 @@
+@use "../mixins";
+
+.footer-main {
+  height: 100%;
+
+  padding-top: 15px;
+
+  &__container {
+    display: flex;
+
+    @include mixins.respond-to(mobileOnly) {
+      flex-direction: column;
+    }
+  }
+
+  &__logo-block {
+    margin-right: 100px;
+  }
+
+  &__feedback-form {
+    margin-left: auto;
+  }
+}

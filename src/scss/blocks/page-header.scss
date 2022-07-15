@@ -1,3 +1,52 @@
+@use "../mixins";
+
 .page-header {
   flex-shrink: 0;
+}
+
+.select {
+  &__container {
+    display: flex;
+
+    padding-top: 60px;
+  }
+
+  &__type-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 70px;
+    background: transparent;
+    border: 1px solid #828282;
+    border-radius: 9px;
+
+    padding: 0 20px 0 20px;
+    margin-right: 25px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__type-caption {
+    font-family: var(--font-family-default);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #828282;
+
+    transition-duration: 0.1s;
+  }
+
+  &__type-button--active {
+    border: 2px solid #3440D9;
+  }
+
+  &__type-button--active .select__type-caption {
+    color: #3440D9;
+
+    transition-duration: 0.1s;
+  }
 }

@@ -17,9 +17,15 @@
 	<header class="page-header">
 		<div class="select">
 			<div class="select__container base-container">
-				<button class="select__type-button">стоимость обслуживания</button>
-				<button class="select__type-button">стоимость лифта</button>
-				<button class="select__type-button">стоимость монтажа / замены</button>
+				<button class="select__type-button" type="button">
+					<span class="select__type-caption">стоимость обслуживания</span>
+				</button>
+				<button class="select__type-button select__type-button--active" type="button">
+					<span class="select__type-caption">стоимость лифта</span>
+				</button>
+				<button class="select__type-button" type="button">
+					<span class="select__type-caption">стоимость монтажа / замены</span>
+				</button>
 			</div>
 		</div>
 	</header>
@@ -31,7 +37,7 @@
 					<div class="form-section__inputset">
 						<span class="form-section__label">Тип лифта</span>
 						<div class="form-section__inputs-block elev-type__block">
-							<button class="form-section__button elev-type__item elev-type__item--one" type="button">
+							<button class="form-section__button form-section__button--active elev-type__item elev-type__item--one" type="button">
 								<span class="form-section__button-inner">Пассажирский</span>
 							</button>
 							<button class="form-section__button elev-type__item elev-type__item--two" type="button">
@@ -187,30 +193,32 @@
 		</section>
 
 		<section class="feedback">
-			<h2 class="feedback__title">У вас есть к нам вопросы?</h2>
-			<p class="feedback__info">
-				Если у вас возникли вопросы, 
-				то мы готовы ответить на них. 
-				Оставьте свои контакные данные 
-				и наш менеджер перезвонить вам в ближайшее время
-			</p>
-			<form class="feedback__form" action="#">
-				<input class="feedback__form-name" placeholder="Ваше имя*" type="text">
-				<input class="feedback__form-phone" placeholder="Ваш телефон*" type="number">
-				<input class="feedback__form-email" placeholder="Email*" type="email">
-				<button class="feedback-form__submit" type="submit">
-					<span class="feedback-form__button-caption">Отправить</span>
-				</button>
-			</form>
-			<p class="feedback__personaldata">
-				Отправляя данную форму, вы принимаете условие пользовательского соглашения
-			</p>
+			<div class="feedback__container base-container">
+				<h3 class="feedback__title">У вас есть к нам вопросы?</h3>
+				<p class="feedback__info">
+					Если у вас возникли вопросы, 
+					то мы готовы ответить на них. 
+					Оставьте свои контакные данные 
+					и наш менеджер перезвонить вам в ближайшее время
+				</p>
+				<form class="feedback__form" action="#">
+					<input class="feedback__form-name" placeholder="Ваше имя*" type="text">
+					<input class="feedback__form-phone" placeholder="Ваш телефон*" type="number">
+					<input class="feedback__form-email" placeholder="Email*" type="email">
+					<button class="feedback-form__submit" type="submit">
+						<span class="feedback-form__button-caption">Отправить</span>
+					</button>
+				</form>
+				<p class="feedback__form-personaldata">
+					Отправляя данную форму, вы принимаете условие пользовательского соглашения
+				</p>
+			</div>
 		</section>
 
 	</main>
 	<footer class="page-footer">
-		<div class="page-footer__container base-container">
-			<nav class="footer-nav">
+		<nav class="footer-nav">
+			<div class="footer-nav__container base-container">
 				<ul class="footer-nav__list">
 					<li class="footer-nav__item"><a class="footer-nav__link base-link" href="#">О компании</a></li>
 					<li class="footer-nav__item"><a class="footer-nav__link base-link" href="#">Услуги</a></li>
@@ -220,43 +228,60 @@
 					<li class="footer-nav__item"><a class="footer-nav__link base-link" href="#">Отзывы</a></li>
 					<li class="footer-nav__item"><a class="footer-nav__link base-link" href="#">Контакты</a></li>
 				</ul>
-			</nav>
-			<div class="footer-main">
-				<div class="footer-main__logo-block"></div>
-				<div class="footer-main__contacts-block">
-					<ul class="footer-main__contacts-list">
-						<li class="footer-main__contacts-item">
-							<a class="footer-main__contacts-link base-link" href="#">
-								<svg class="footer-main__contacts-icon" width="" height="">
-									<use href="img/icon/sprite.svg#map-icon"></use>
-								</svg>
-								<span class="footer-main__contacts-label">Москва, ул. Ленина, д. 7, стр. 1</span>
-							</a>
-						</li>
-						<li class="footer-main__contacts-item">
-							<a class="footer-main__contacts-link base-link" href="#">
-								<svg class="footer-main__contacts-icon" width="" height="">
-									<use href="img/icon/sprite.svg#phone-icon"></use>
-								</svg>
-								<span class="footer-main__contacts-label">8(000) 000-00-00</span>
-							</a>
-						</li>
-						<li class="footer-main__contacts-item">
-							<a class="footer-main__contacts-link base-link" href="#">
-								<svg class="footer-main__contacts-icon" width="" height="">
-									<use href="img/icon/sprite.svg#icon-icon"></use>
-								</svg>
-								<span class="footer-main__contacts-label">info@mail.ru</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<form class="footer-main-feedback-form" action=""></form>
 			</div>
-			<div class="footer-underline">
-				<a href="" class="footer-underline__policy base-link">Политика конфиденциальности</a>
-				<span class="footer-underline__rights">Все права защищены. © 2019</span>
-				<span class="footer-underline__copyright">Создание сайта:</span>
+		</nav>
+		<div class="footer-main">
+			<div class="footer-main__container base-container">
+				<div class="footer-main__logo-block">
+					<img class="footer-main__logo-img" src="img/image/design/logo.png" width="217" height="56" loading="lazy" alt="Логотип">
+				</div>
+				<ul class="footer-main__contacts-list">
+					<li class="footer-main__contacts-item">
+						<a class="footer-main__contacts-link base-link" href="#">
+							<svg class="footer-main__contacts-icon" width="26" height="26">
+								<use href="img/icon/sprite.svg#map-icon"></use>
+							</svg>
+							<span class="footer-main__contacts-label"><nobr>Москва, ул. Ленина, д. 7, стр. 1</nobr></span>
+						</a>
+					</li>
+					<li class="footer-main__contacts-item">
+						<a class="footer-main__contacts-link base-link" href="#">
+							<svg class="footer-main__contacts-icon" width="26" height="26">
+								<use href="img/icon/sprite.svg#phone-icon"></use>
+							</svg>
+							<span class="footer-main__contacts-label">8(000) 000-00-00</span>
+						</a>
+					</li>
+					<li class="footer-main__contacts-item">
+						<a class="footer-main__contacts-link base-link" href="#">
+							<svg class="footer-main__contacts-icon" width="26" height="26">
+								<use href="img/icon/sprite.svg#email-icon"></use>
+							</svg>
+							<span class="footer-main__contacts-label">info@mail.ru</span>
+						</a>
+					</li>
+				</ul>
+				<form class="footer-main__feedback-form" action="#">
+					<h3 class="footer-main__form-title">Обратная связь</h3>
+					<div class="footer-main__form-topline">
+						<input class="footer-main__form-input" value="Введите ваше имя" type="text">
+						<input class="footer-main__form-input" value="Телефон" type="text">
+					</div>
+					<div class="footer-main__bottomline">
+						<input class="footer-main__form-input" value="Ваш комментарий" type="text">
+						<input class="footer-main__form-input" type="submit">
+					</div>
+					<p class="feedback__form-personaldata">
+						Отправляя данную форму, вы принимаете условие пользовательского соглашения
+					</p>
+				</form>
+			</div>
+		</div>
+		<div class="page-footer__underline">
+			<div class="page-footer__underline-container base-container">
+				<a class="page-footer__underline-policy base-link" href="#">Политика конфиденциальности</a>
+				<span class="page-footer__underline-rights">Все права защищены. © 2019</span>
+				<span class="page-footer__underline-copyright">Создание сайта:</span>
 			</div>
 		</div>
 	</footer>

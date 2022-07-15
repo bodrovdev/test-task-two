@@ -1,5 +1,53 @@
 @use "../mixins";
 
 .page-footer {
+  display: flex;
+  flex-direction: column;
   flex-shrink: 0;
+
+  min-height: 340px;
+  background: linear-gradient(269.95deg, #333333 34.7%, #000000 144.49%);
+
+  &__underline {
+    background-color: #000000;
+    
+    margin-top: auto;
+
+    &-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @include mixins.respond-to(mobileOnly) {
+        flex-direction: column;
+      }
+
+      min-height: 60px;
+    }
+
+    &-policy {
+      font-family: var(--font-family-default);
+      font-weight: 400;
+      font-size: 13.59px;
+      line-height: 19px;
+      text-decoration-line: underline;
+      color: #ADADAD;
+    }
+
+    &-rights {
+      font-family: var(--font-family-default);
+      font-weight: 400;
+      font-size: 13.59px;
+      line-height: 19px;
+      color: #ADADAD;
+    }
+
+    &-copyright {
+      font-family: var(--font-family-default);
+      font-weight: 400;
+      font-size: 13.59px;
+      line-height: 19px;
+      color: #ADADAD;
+    }
+  }
 }

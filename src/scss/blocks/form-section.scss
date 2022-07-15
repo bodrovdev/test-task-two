@@ -1,7 +1,7 @@
 @use "../mixins";
 
 .form-section {
-  margin-top: 80px;
+  margin: 80px 0 150px 0;
 
   &__container {
     display: flex;
@@ -51,7 +51,7 @@
 
     transition-duration: 0.1s;
 
-    padding: 15px;
+    padding: 0 15px 0 15px;
     margin-right: 15px;
 
     &:hover {
@@ -84,4 +84,150 @@
 
     transition-duration: 0.1s;
   }
+
+  &__buttonset {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__addmore {
+    position: relative;
+
+    width: 261px;
+    height: 69px;
+    border: 3px solid #75ADEF;
+    background: transparent;
+
+    margin-bottom: 25px;
+
+
+
+    &:hover {
+      background-color: #9398D6;
+
+      transition-property: background-color;
+      transition-duration: 0.1s;
+      transition-timing-function: ease-in-out;
+    }
+
+    &:hover .form-section__addmore-caption {
+      color: #FFFFFF;
+      transition-duration: 0.1s;
+    }
+  }
+
+  &__submit {
+    width: 383px;
+    height: 94px;    
+    border: 3px solid #3440D9;
+    background: transparent;
+
+    &:hover {
+      background-color: #9398D6;
+
+      transition-property: background-color;
+      transition-duration: 0.1s;
+      transition-timing-function: ease-in-out;
+    }
+
+    &:hover .form-section__submit-caption {
+      color: #FFFFFF;
+      transition-duration: 0.1s;
+    }
+  }
+
+  &__addmore-caption {
+    font-family: var(--font-family-default);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #75ADEF;
+
+    transition-duration: 0.1s;
+  }
+
+  &__submit-caption {
+    font-family: var(--font-family-default);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #3440D9;
+
+    transition-duration: 0.1s;
+  }
+}
+
+.amount-type__minus-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 64px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #BDBDBD;
+  border-radius: 9px;
+
+  font-family: var(--font-family-default);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #11263A;
+
+  margin: 0;
+}
+
+.amount-type__plus-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 64px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #BDBDBD;
+  border-radius: 9px;
+
+  font-family: var(--font-family-default);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #11263A;
+
+  margin: 0;
+}
+
+.form-section__amount-input {
+  width: 119px;
+  height: 50px;
+
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #828282;
+  border-radius: 9px;
+
+  font-family: var(--font-family-default);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #11263A;
+  text-align: center;
+
+  margin: 0 20px 0 20px;
+}
+
+.form-section__field-input {
+  width: 377px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #828282;
+  border-radius: 9px;
+
+  font-family: var(--font-family-default);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #11263A;
+  text-align: center;
 }

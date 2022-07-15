@@ -21,11 +21,25 @@
     border: 1px solid #828282;
     border-radius: 9px;
 
+    transition-duration: 0.1s;
+
     padding: 0 20px 0 20px;
     margin-right: 25px;
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &:hover {
+      background-color: #9398D6;
+
+      transition-property: background-color;
+      transition-duration: 0.1s;
+      transition-timing-function: ease-in-out;
+    }
+
+    &:hover .select__type-caption {
+      color: #FFFFFF;
     }
   }
 
